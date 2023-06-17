@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/telBtn"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="100dp"
+        android:insetTop="2dp"
+        android:text="استعلام تلفن ثابت"
+        app:iconPadding="2dp"
+        app:iconTintMode="screen"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Button
+        android:id="@+id/chrgBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="خرید شارژ"
+        android:layout_marginTop="100dp"
+        android:layout_marginHorizontal="20dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Button
+        android:id="@+id/dumbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="بسته اینترنت"
+        android:layout_marginTop="50dp"
+        android:layout_marginHorizontal="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/telBtn" />
+
+
+    <Button
+        android:id="@+id/dumbtn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="پرداخت قبض"
+        android:layout_marginTop="50dp"
+        android:layout_marginHorizontal="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chrgBtn" />
+
+
+    <Button
+        android:id="@+id/dumbtn3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="خلافی"
+        android:layout_marginTop="50dp"
+        android:layout_marginHorizontal="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dumbtn" />
+
+
+    <Button
+        android:id="@+id/dumbtn4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="موجودی"
+        android:layout_marginTop="50dp"
+        android:layout_marginHorizontal="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dumbtn2" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
