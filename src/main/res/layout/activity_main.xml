@@ -9,15 +9,11 @@
 
     <Button
         android:id="@+id/telBtn"
-        style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="20dp"
         android:layout_marginTop="100dp"
-        android:insetTop="2dp"
         android:text="استعلام تلفن ثابت"
-        app:iconPadding="2dp"
-        app:iconTintMode="screen"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
