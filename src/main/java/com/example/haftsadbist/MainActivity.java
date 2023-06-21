@@ -10,7 +10,7 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button fixedTelBtn;
+    Button fixedTelBtn, chargeBtn;
     Context context =this;
 
     @Override
@@ -19,11 +19,20 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         fixedTelBtn = findViewById(R.id.telBtn);
+        chargeBtn = findViewById(R.id.chrgBtn);
 
         fixedTelBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent in = new Intent(context, TelActivity.class);
+                startActivity(in);
+            }
+        });
+
+        chargeBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent in = new Intent(context, ChargeActivity.class);
                 startActivity(in);
             }
         });

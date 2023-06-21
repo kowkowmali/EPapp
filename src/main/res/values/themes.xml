@@ -6,4 +6,11 @@
     </style>
 
     <style name="Theme.HaftsadBist" parent="Base.Theme.HaftsadBist" />
+        <style name="SplashTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+            <item name="android:windowBackground">@drawable/splash_background</item>
+            <item name="colorPrimary">@color/grey</item>
+            <item name="colorPrimaryDark">@color/grey</item>
+            <item name="colorAccent">@color/blue</item>
+            <item name="android:statusBarColor">@color/white</item>
+        </style>
 </resources>

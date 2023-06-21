@@ -69,6 +69,7 @@
         app:layout_constraintTop_toBottomOf="@+id/cardview1">
 
         <RadioButton
+            android:id="@+id/mciBtn"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:text="همراه اول"
@@ -77,6 +78,8 @@
             android:textSize="13sp" />
 
         <RadioButton
+            android:id="@+id/irancellBtn"
+
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:text="ایرانسل"
@@ -84,6 +87,8 @@
             android:textSize="13sp" />
 
         <RadioButton
+            android:id="@+id/rightellBtn"
+
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:textColor="@color/white"

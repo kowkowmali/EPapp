@@ -53,7 +53,7 @@ public class TelActivity extends AppCompatActivity {
                     @Override
                     public void onResponse(Call<Root> call, Response<Root> response) {
                         if(response.body().errorMessage!=null){
-                            Toast.makeText(context, response.body().data.FinalTerm.Amount + '/' +response.body().errorMessage + '/' + response.body().code.toString(), Toast.LENGTH_LONG).show();
+                            Toast.makeText(context, response.body().errorMessage, Toast.LENGTH_LONG).show();
                         }else{
                             Intent in = new Intent(context, TelResultActivity.class);
                             in.putExtra(FINALTERM_CODE, response.body().data.FinalTerm.PaymentID);
