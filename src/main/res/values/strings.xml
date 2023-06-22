@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">HaftsadBist</string>
+    <string name="app_name">EP app</string>
+    <string name="ONE_API_TOKEN">289049:6493779dc98c7</string>
 </resources>

@@ -4,76 +4,256 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/blue"
+    android:background="@color/ColorBackground"
     tools:context=".MainActivity">
 
-    <Button
+    <ImageView
+        android:layout_width="700dp"
+        android:layout_height="700dp"
+        android:src="@drawable/logo_single_ep"
+        android:alpha="0.2"
+        android:layout_marginStart="60dp"
+        android:layout_marginBottom="90dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <LinearLayout
         android:id="@+id/telBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginHorizontal="20dp"
-        android:layout_marginTop="100dp"
-        android:text="استعلام تلفن ثابت"
+        android:orientation="vertical"
+        android:layout_margin="60dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent">
+        <ImageButton
+            android:id="@+id/telBtn1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/button_main"
+            android:src="@drawable/receipt_long_wght400_opsz48"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="استعلام قبض تلفن ثابت"
+            android:textAlignment="center"
 
+            android:fontFamily="@font/iran_sans"
+            android:textColor="@color/white"
+            />
+    </LinearLayout>
 
-    <Button
+    <LinearLayout
         android:id="@+id/chrgBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="خرید شارژ"
-        android:layout_marginTop="100dp"
-        android:layout_marginHorizontal="20dp"
-
+        android:orientation="vertical"
+        android:layout_margin="60dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent">
+        <ImageButton
+            android:id="@+id/chrgBtn1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/button_main"
+            android:src="@drawable/account_balance_wallet_wght400_opsz48"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="خرید شارژ"
+            android:fontFamily="@font/iran_sans"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            />
+    </LinearLayout>
 
 
-    <Button
+    <LinearLayout
         android:id="@+id/dumbtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="بسته اینترنت"
-        android:layout_marginTop="50dp"
-        android:layout_marginHorizontal="20dp"
+        android:orientation="vertical"
+        android:layout_margin="60dp"
+
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/telBtn" />
+        app:layout_constraintTop_toBottomOf="@+id/telBtn">
+        <ImageButton
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/button_main"
+            android:src="@drawable/language_wght400_opsz48"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="بسته اینترنت"
+            android:fontFamily="@font/iran_sans"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            />
+    </LinearLayout>
 
-
-    <Button
+    <LinearLayout
         android:id="@+id/dumbtn2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="پرداخت قبض"
-        android:layout_marginTop="50dp"
-        android:layout_marginHorizontal="20dp"
+        android:orientation="vertical"
+        android:layout_margin="60dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/chrgBtn" />
+        app:layout_constraintTop_toBottomOf="@+id/chrgBtn">
+        <ImageButton
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/button_main"
+            android:src="@drawable/dynamic_form_wght400_opsz48"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="پرداخت قبض"
+            android:fontFamily="@font/iran_sans"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            />
+    </LinearLayout>
 
-
-    <Button
+    <LinearLayout
         android:id="@+id/dumbtn3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="خلافی"
-        android:layout_marginTop="50dp"
-        android:layout_marginHorizontal="20dp"
+        android:orientation="vertical"
+        android:layout_margin="60dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/dumbtn" />
+        app:layout_constraintTop_toBottomOf="@+id/dumbtn">
+        <ImageButton
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/button_main"
+            android:src="@drawable/car_crash_wght400_opsz48"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="خلافی"
+            android:fontFamily="@font/iran_sans"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            />
+    </LinearLayout>
 
 
-    <Button
+    <LinearLayout
         android:id="@+id/dumbtn4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="موجودی"
-        android:layout_marginTop="50dp"
-        android:layout_marginHorizontal="20dp"
+        android:orientation="vertical"
+        android:layout_margin="60dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/dumbtn2" />
+        app:layout_constraintTop_toBottomOf="@+id/dumbtn2">
+        <ImageButton
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/button_main"
+            android:src="@drawable/credit_card_wght400_opsz48"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="موجودی"
+            android:fontFamily="@font/iran_sans"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            />
+    </LinearLayout>
 
 
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="10dp"
 
+        app:cardElevation="10dp"
+        app:cardCornerRadius="20dp"
+        android:layout_margin="10dp"
+        app:cardBackgroundColor="@color/ColorSecondaryBackground"
+        app:cardMaxElevation="12dp"
+        app:cardPreventCornerOverlap="true"
+        android:layoutDirection="rtl"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dumbtn4"
+        >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/translateLayer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="top|center"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                >
+                <EditText
+                    android:id="@+id/editTextText"
+                    android:layout_width="280dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="40dp"
+                    android:ems="10"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/grey"
+                    android:hint="کلمه یا جمله برای ترجمه وارد کنید..."
+                    android:inputType="text"
+                    />
+
+                <ImageButton
+                    android:id="@+id/translateBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/button_main"
+                    app:srcCompat="@android:drawable/ic_menu_send" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view_line"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_margin="10dp"
+                android:background="@android:color/black"
+                app:layout_constraintTop_toBottomOf="@+id/translateLayer"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/translateTv"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="متن ترجمه"
+        android:fontFamily="@font/iran_sans"
+        android:textSize="15sp"
+        android:textDirection="rtl"
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view_line" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

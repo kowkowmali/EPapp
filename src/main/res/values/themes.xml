@@ -2,15 +2,10 @@
     <!-- Base application theme. -->
     <style name="Base.Theme.HaftsadBist" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+         <item name="colorPrimary">@color/ColorPrimary</item>
+         <item name="colorSecondary">@color/ColorSecondary</item>
     </style>
 
     <style name="Theme.HaftsadBist" parent="Base.Theme.HaftsadBist" />
-        <style name="SplashTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
-            <item name="android:windowBackground">@drawable/splash_background</item>
-            <item name="colorPrimary">@color/grey</item>
-            <item name="colorPrimaryDark">@color/grey</item>
-            <item name="colorAccent">@color/blue</item>
-            <item name="android:statusBarColor">@color/white</item>
-        </style>
+
 </resources>
